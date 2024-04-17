@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Rekening26 {
 
     String NoRekening;
@@ -14,7 +16,7 @@ public class Rekening26 {
         Email = e;
     }
     
-    public String getNORekening() {
+    public String getNoRekening() {
         return NoRekening;
     }
 
@@ -34,13 +36,4 @@ public class Rekening26 {
         return Email;
     }
 
-    // Method to display rekening details
-    public void tampilkanRekening() {
-        System.out.println("==================================");
-        System.out.println("         DATA REKENING            ");
-        System.out.println("==================================");
-        System.out.printf("%-15s %-15s %-15s %-15s %-20s\n", "No Rekening", "Nama", "Nama Ibu", "Phone", "Email");
-        System.out.println("----------------------------------");
-        System.out.printf("%-15s %-15s %-15s %-15s %-20s\n", NoRekening, nama, namaIbu, Phone, Email);
-    }
 }
